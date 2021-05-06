@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.Done{
+  text-decoration: line-through;
+}
+
+.fa-plus{
+  color: #282c34;
+}
+
+.navbar-brand{
+  font-size: 2em;
+}
+
+.todoItem{
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
