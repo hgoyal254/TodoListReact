@@ -13,16 +13,18 @@ export const AddToDo = (props) => {
             props.addTodo(title, description);
             setTitle("");
             setDescription("");
+            document.getElementById("AddTodoDiv").classList.toggle("Hide");
         }
         
     }
     return (
-        <div className="container my3">
+        <div className="container my3" id="AddTodoDiv">
+            <br></br>
             <h3>Add a To-Do</h3>
             <form onSubmit={submit}>
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label">Todo Title</label>
-                    <input type="text" value={title} onChange={(e)=>{setTitle(e.target.value)}} className="form-control" id="title" />
+                    <input type="text" value={title} maxLength = "40" placeholder="Title can have upto 50 characters" onChange={(e)=>{setTitle(e.target.value)}} className="form-control" id="title" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="description" className="form-label">Todo Description</label>

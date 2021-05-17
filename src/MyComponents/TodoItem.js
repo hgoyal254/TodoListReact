@@ -22,7 +22,7 @@ export const TodoItem = ({todo,onDelete}) => {
             <div className="todoItem my-3 py-3 px-3">
                 <div id={todo.sno} className="text-center">
                     <h4>{todo.title}</h4>
-                    <p>{todo.description}</p>
+                    <p className="description">{todo.description}</p>
                 </div>
                 
                 <button className="btn btn-sm btn-danger" onClick={() => {onDelete(todo)}}>Delete</button>

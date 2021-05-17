@@ -54,14 +54,15 @@ function App() {
           <Route exact path="/" render={()=>{
             return(
               <>
+              <AddToDo addTodo={addTodo}/>
               <Todos todos_list = {todos} onDelete={onDelete}/>
               </>
             )
           }}>
           </Route>
-          <Route exact path="/addToDo">
+          {/* <Route exact path="/addToDo">
             <AddToDo addTodo={addTodo}/>
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </>
